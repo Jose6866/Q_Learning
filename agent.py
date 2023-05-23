@@ -18,7 +18,7 @@ class AGENT:
         self.state = [0,0]
 
         if is_upload:
-            qlearning_results = np.load('E:\Code\HW4_student_Q_learning simulation\result\qlearning.npz')
+            qlearning_results = np.load('.\result\qlearning.npz')
             self.V_values = qlearning_results['V']
             self.Q_values = qlearning_results['Q']
             self.policy = qlearning_results['PI']
